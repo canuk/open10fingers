@@ -132,6 +132,7 @@ function loadLesson(num) {
 	//var lastColor = '0';
 	$('body').off('keypress.dtt');
 	$('body').on('keypress.dtt', function (ev) {
+		  $('#tablet-text-box').val('');
 			$('#last-charPressed').html(ev.which || ev.keyCode);
 		if (prevts == 0) prevts = new Date();
 

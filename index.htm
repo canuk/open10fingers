@@ -70,7 +70,7 @@
 	<script type="text/javascript" src="js/util.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!--script type="text/javascript" src="dict/list.js"></script-->
-	<script type="text/javascript" src="dict/word-list.id.js"></script>
+	<script type="text/javascript" src="dict/list.js"></script>
  <!--svg class="icon" viewBox="0 0 32 32" width="64" height="64">
 	<use xlink:href="img/sprites.svg#icon-home"></use>
 </svg -->
@@ -78,7 +78,7 @@
   <!-- svg class="icon" viewBox="0 0 1500 1500" >
 	<use xlink:href="img/keyboard-layout-a.svg#svg2"></use>
   </svg -->
- 
+ <input id="tablet-text-box" type="text"/>
 
 
 
@@ -242,6 +242,10 @@ $(document).ready(function(){
   
 });
 
+$(document).ready(function()
+{
+   $('#tablet-text-box').click(function(e){ $(this).focus(); });
+})
 
 </script>
 </body>
